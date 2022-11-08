@@ -8,7 +8,7 @@ export const FormContainer = ({ fields, onDeleteField }) => {
   const renderField = (field) => {
     if (field.type === "input") {
       return <TextInput label={field.label} />;
-    } else if (field.type == "select") {
+    } else if (field.type === "select") {
       return (
         <SelectInput
           label={field.label}
