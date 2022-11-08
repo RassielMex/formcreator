@@ -74,7 +74,7 @@ const FormSelector = ({ createInput }) => {
         className={styles.input}
         placeholder="Etiqueta"
       />
-      {(selector == "radio" || selector == "select") && (
+      {(selector === "radio" || selector === "select") && (
         <>
           <input
             value={values.val1}
@@ -92,7 +92,7 @@ const FormSelector = ({ createInput }) => {
           />
         </>
       )}
-      {selector == "select" && (
+      {selector === "select" && (
         <input
           value={values.val3}
           name="val3"
