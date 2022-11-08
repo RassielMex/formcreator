@@ -36,6 +36,7 @@ export const FormContainer = ({ fields, onDeleteField }) => {
             <div key={index}>
               {renderField(field)}
               <button
+                className={styles.button}
                 onClick={() => {
                   onDeleteField(field);
                 }}
